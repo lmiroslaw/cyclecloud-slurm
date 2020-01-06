@@ -28,6 +28,14 @@ Autoscale = $Autoscale
     IsReturnProxy = $ReturnProxy
     AdditionalClusterInitSpecs = $MasterClusterInitSpecs
     
+        [[[volume shared]]]
+        size=2000
+        persistent=true
+        mount = shared
+
+        [[[configuration cyclecloud.mounts.shared]]]
+        mountpoint = /mnt/exports/shared
+    
         [[[configuration]]]
 
         [[[cluster-init cyclecloud/slurm:master]]]
