@@ -3,7 +3,7 @@
 ## Cluster Configuration File ##
 ################################
 
-[cluster Slurm]
+[cluster Slurm-NFS]
 FormLayout = selectionpanel
 Category = Schedulers
 
